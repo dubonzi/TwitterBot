@@ -1,0 +1,19 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "Um simples bot para o Twitter seguindo as aulas de @shiffman em https://www.youtube.com/playlist?list=PLRqwX-V7Uu6atTSxoRiVnSuOn6JHnq2yV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "dubonzi",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "twit": "^2.2.9"
+  }
+}
