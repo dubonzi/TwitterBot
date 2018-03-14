@@ -7,8 +7,8 @@ var T = new Twit(config);
 
 /* Exemplo de stream com post */
 /* Descomentar as linhas abaixo para habilitar o stream */
-/* var stream = T.stream('user');
-stream.on('tweet', eventoTweet); */
+var stream = T.stream('user');
+stream.on('tweet', eventoTweet);
 
 function eventoTweet(evento) {
   var mensagem = evento.text;
