@@ -11,13 +11,14 @@ var stream = T.stream('user');
 stream.on('tweet', eventoTweet);
 
 function eventoTweet(evento) {
-  var mensagem = evento.text;
-  var remetente = evento.user.screen_name;
-  var usuariosCitacao = evento.entities.user_mentions;
+  let mensagem = evento.text;
+  let remetente = evento.user.screen_name;
+  let usuariosCitacao = evento.entities.user_mentions;
+  let idMensagem = evento.id_str;
   usuariosCitacao.forEach(usuario => {
     if (usuario.screen_name === 'dubonzi_dev') {
       console.log('@' + remetente + " falou comigo!");
-      novoTweet("Olá @" + remetente + " , obrigado pela sua mensagem!");
+      novoTweet("Olá @" + remetente + " , obrigado pela sua mensagem de id " + idMensagem);
     }
   });
 }
