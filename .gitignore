@@ -25,5 +25,5 @@ jspm_packages/
 *.tgz
 
 #Outros
-#config.js
+config.js
 ArquivosGerados/
